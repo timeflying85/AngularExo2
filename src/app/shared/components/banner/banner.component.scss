@@ -1,0 +1,29 @@
+a {
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: x-large;
+  display: inline-block;
+  width: 100%;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: rgb(233, 16, 16);
+}
+
+li:last-child a {
+  margin-right: 0;
+}
+
+a:link, a:visited, a:focus {
+  background: yellow;
+}
+
+a:hover {
+  background: orange;
+}
+
+a:active {
+  background: red;
+  color: white;
+}

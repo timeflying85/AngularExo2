@@ -1,0 +1,21 @@
+<br>
+
+<fieldset>
+
+  <h3>Articles List</h3>
+
+  <br>
+
+    <ul>
+      <li *ngFor="let article of articles">
+        <p>{{article.name}} - {{article.category}} : <a [routerLink]="['../one', article.id]">Article Details</a></p>
+        <a [routerLink]="['../update', article.id]">Update</a> &nbsp;
+        <br>
+        <a [routerLink]="['../delete', article.id]">Delete</a> &nbsp;
+      </li>
+    </ul>
+    <br>
+  <p></p>
+    <a [routerLink]="['../create']">Create Article</a> &nbsp;
+  </fieldset>
+<p></p>

@@ -1,0 +1,23 @@
+<br>
+
+<fieldset>
+
+<div *ngIf="selectedAnimal != undefined">
+  <h3>{{selectedAnimal.name}}</h3>
+  <ul>
+    <li>Race : {{selectedAnimal.race}}</li>
+    <li>Coat : {{selectedAnimal.coat}}</li>
+    <li>Birthdate : {{selectedAnimal.birthdate | date : 'dd/MM/yyyy'}}</li>
+    <li>Owner : {{selectedAnimal.owner}}</li>
+  </ul>
+</div>
+
+
+<div *ngIf="selectedAnimal == undefined">
+    <h3>Animal Introuvable</h3>
+</div>
+
+<a routerLink="../">Back to List</a>
+
+
+</fieldset>

@@ -1,0 +1,29 @@
+<br>
+
+<fieldset>
+
+<div *ngIf="selectedArticle != undefined">
+  <h3>{{selectedArticle.name}}</h3>
+  <ul>
+    <li>Category : {{selectedArticle.category}}</li>
+    <li>Price : {{selectedArticle.price}}</li>
+    <li>Creation Date : {{selectedArticle.creationDate | date : 'dd/MM/yyyy'}}</li>
+    <li>Description : {{selectedArticle.description}}</li>
+    <li>Note : {{selectedArticle.note}}</li>
+  </ul>
+  <br>
+<a [routerLink]="['../../update', selectedArticle.id]">Update</a>
+<p></p>
+<a [routerLink]="['../../delete', selectedArticle.id]">Delete</a>
+<p></p>
+<a routerLink="../../all">Back to List</a>
+
+
+</div>
+
+
+<div *ngIf="selectedArticle == undefined">
+    <h3>Article Introuvable</h3>
+</div>
+
+</fieldset>

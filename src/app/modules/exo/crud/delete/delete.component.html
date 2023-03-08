@@ -1,0 +1,14 @@
+<br>
+<fieldset>
+  <h3>Delete an Article</h3>
+  <br>
+  <ul>
+    <li *ngFor="let article of articles">
+      <p>{{article.name}} - {{article.category}}
+        <button (click)="deleteArticle(article)" style="color : 'red'">Delete</button>
+      </p>
+    </li>
+  </ul>
+  <a routerLink="../../all">Back to List</a>
+</fieldset>
+

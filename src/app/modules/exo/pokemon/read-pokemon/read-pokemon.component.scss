@@ -1,0 +1,93 @@
+fieldset {
+  margin-top: 20px;
+  background-color:#fd8e86;
+  max-width:500px;
+  padding:16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: ridge 5px;
+  border-color: rgb(253, 16, 16);
+}
+
+h4 {
+  outline: none;
+  background-position: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: rgb(53, 16, 216);
+}
+
+p {
+    outline: none;
+    background-position: center;
+    font-size: large;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+    color: rgb(66, 133, 21);
+}
+
+.type {
+  background-position: center;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: block;
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+    color: rgb(167, 108, 0);
+}
+
+.stat{
+  background-position: center;
+  display: block;
+  width: 35%;
+  margin: auto;
+  line-height: 3;
+    color: rgb(151, 5, 170);
+}
+
+img {
+  display: block;
+  width: 35%;
+  margin: auto;
+}
+
+.image-clignote  {
+  animation-duration: .9s;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: none;
+}
+@keyframes clignoter {
+ 0%   { opacity:1; }
+ 40%   {opacity:0; }
+ 100% { opacity:1; }
+}
+
+.blink-bg{
+  color: #fff;
+  animation: blinkingBackground 5s infinite;
+}
+@keyframes blinkingBackground{
+  0%		{ background-color: #9efaa3;}
+  25%		{ background-color: #8bd2fc;}
+  50%		{ background-color: #b4fc8b;}
+  75%		{ background-color: #fd84df;}
+  100%	        { background-color: #6dd9fd;}
+}
+

@@ -1,0 +1,15 @@
+<br>
+
+<fieldset>
+
+<h3>Animals List</h3>
+
+<br>
+
+<ul>
+  <li *ngFor="let animal of animals">
+    <p>{{animal.name}} - {{animal.race}} : <a [routerLink]="['./', animal.id]">Animal Details</a></p>
+  </li>
+</ul>
+
+</fieldset>

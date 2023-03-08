@@ -1,0 +1,40 @@
+<fieldset>
+  <h3>Update Article</h3>
+  <br>
+  <form (ngSubmit)="submit()" [formGroup]="articleForm">
+    <div class="form-group">
+      <label for="name">Name : </label>
+      <input type="text" class="form-control" id="name"  formControlName="name" name="name">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="category">Category : </label>
+      <input type="text" class="form-control" id="category" formControlName="category" name="category">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="price">Price : </label>
+      <input type="number" class="form-control" id="price" formControlName="price" name="price">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="creationDate">Creation Date : </label>
+      <input type="date" class="form-control" id="date" formControlName="creationDate" name="date">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="description">Description : </label>
+      <input type="text" class="form-control" id="description" formControlName="description" name="description">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="note">Note : </label>
+      <input type="text" class="form-control" id="note" formControlName="note" name="note">
+    </div>
+    <br>
+    <p></p>
+    <button type="submit" class="btn btn-primary" [disabled]="!articleForm.valid">Update</button>
+    <p></p>
+  <a routerLink="../../all">Back to List</a>
+
+

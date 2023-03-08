@@ -1,0 +1,39 @@
+<fieldset>
+<h3>Create New Article</h3>
+
+<form (ngSubmit)="createArticle()" [formGroup]="createForm">
+  <div class="form-group">
+    <label for="name">Name : </label>
+    <input type="text" id="name" formControlName="name">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="category">Category : </label>
+    <input type="text" id="category" formControlName="category">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="price">Price : </label>
+    <input type="number" id="price" formControlName="price">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="creationDate">Creation Date : </label>
+    <input type="date" id="creationDate" formControlName="creationDate">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <textarea cols="30" rows="2" id="description" formControlName="description"></textarea>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="note">Note : </label>
+    <textarea id="note" formControlName="note" ></textarea>
+  </div>
+  <br>
+  <button type="submit" [disabled]="!createForm.valid">Add</button>
+</form>
+</fieldset>
+
+<button (click)="createArticle()">submit</button>
